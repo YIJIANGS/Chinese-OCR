@@ -3,7 +3,6 @@ Chinese OCR with HOG + SVM
 
 run wd_segmentation_diff_size.m to see result.
 
-5.1Preprocessing
 Although Chinese OCR is similar to digit recognition, the scale of the problem is different. For digit recognition, only ten classes need to be categorized, whereas for Chinese OCR, I have implemented an algorithm that could classify up to 500 words(Although I have downloaded over 900 Chinese characters with different fonts, it becomes incrementally difficult when increasing the number of classes, so the maximum number of classes in my experiment is only 500). The task of this algorithm is to train a number of known fonts (if I train 50 fonts with 100 words, it means I have 100 classes and 50 samples for each class in training set) and make prediction on new fonts which is not inside the trained fonts.
 
 I have obtained data by manually copying and pasting a set of Chinese words(1000 common words) onto a website http://www.fonts.net.cn/fonts-zh-1.html and this will output the same words with different fonts in image. 
